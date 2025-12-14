@@ -121,9 +121,16 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                                 selectedDay.transactions.map((tx, idx) => (
                                     <div key={idx} className="group p-3 hover:bg-gray-50 rounded-xl transition-colors border border-gray-100/50">
                                         <div className="flex justify-between items-start mb-1">
-                                            <span className="text-xs font-bold text-indigo-600 px-2 py-0.5 bg-indigo-50 rounded-full border border-indigo-100">
-                                                {tx.category}
-                                            </span>
+                                            <div className="flex gap-2">
+                                                <span className="text-xs font-bold text-indigo-600 px-2 py-0.5 bg-indigo-50 rounded-full border border-indigo-100">
+                                                    {tx.category}
+                                                </span>
+                                                {tx.sub_category && (
+                                                    <span className="text-xs font-bold text-violet-600 px-2 py-0.5 bg-violet-50 rounded-full border border-violet-100">
+                                                        {tx.sub_category}
+                                                    </span>
+                                                )}
+                                            </div>
                                             <span className="font-mono font-medium text-gray-700">
                                                 {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(tx.amount)}
                                             </span>

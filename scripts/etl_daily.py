@@ -73,6 +73,7 @@ def fetch_data():
         amount,
         type,
         category,
+        sub_category,
         description
     FROM transaction_read_model
     ORDER BY date ASC;
@@ -190,7 +191,8 @@ def process_data(df):
                 transactions.append({
                     "description": row['description'],
                     "amount": float(row['amount']),
-                    "category": row['category']
+                    "category": row['category'],
+                    "sub_category": row['sub_category']
                 })
             
             daily_expense_data.append({

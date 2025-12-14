@@ -22,11 +22,12 @@ export const MonthBreakdown = ({ data }: MonthBreakdownProps) => {
     // 1. Calculate Total Month Expense
     const totalExpense = data.reduce((sum, day) => sum + day.amount, 0);
 
-    // 2. Aggregate Expenses by Category
+    // 2. Aggregate Expenses by Category/Sub-category
     const categoryMap: Record<string, number> = {};
     data.forEach(day => {
         day.transactions.forEach(tx => {
-            categoryMap[tx.category] = (categoryMap[tx.category] || 0) + tx.amount;
+            const key = tx.sub_category || tx.category;
+            categoryMap[key] = (categoryMap[key] || 0) + tx.amount;
         });
     });
 

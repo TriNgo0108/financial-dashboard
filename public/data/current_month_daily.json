@@ -11,32 +11,38 @@
       {
         "description": "",
         "amount": 239.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 226.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 51.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 46.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 200.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Bills"
       },
       {
         "description": "",
         "amount": 100.0,
-        "category": "Entertainment"
+        "category": "Entertainment",
+        "sub_category": "Movies"
       }
     ]
   },
@@ -47,12 +53,14 @@
       {
         "description": "",
         "amount": 439.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "Electronics"
       },
       {
         "description": "",
         "amount": 52.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -63,27 +71,32 @@
       {
         "description": "",
         "amount": 20.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 29.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 535.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
         "amount": 35.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 80.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "Beauty"
       }
     ]
   },
@@ -99,32 +112,38 @@
       {
         "description": "",
         "amount": 80.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 129.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
         "amount": 38.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 58.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 235.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
         "amount": 35.0,
-        "category": "Entertainment"
+        "category": "Entertainment",
+        "sub_category": "Movies"
       }
     ]
   },
@@ -135,17 +154,20 @@
       {
         "description": "",
         "amount": 1900.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
         "amount": 1600.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Bills"
       },
       {
         "description": "",
         "amount": 68.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -156,12 +178,14 @@
       {
         "description": "",
         "amount": 35.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 28.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -172,12 +196,14 @@
       {
         "description": "",
         "amount": 58.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 70.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -188,12 +214,14 @@
       {
         "description": "",
         "amount": 55.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 20.0,
-        "category": "Other"
+        "category": "Other",
+        "sub_category": "Misc"
       }
     ]
   },
@@ -204,12 +232,14 @@
       {
         "description": "",
         "amount": 36.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 1200.0,
-        "category": "Shopping"
+        "category": "Shopping",
+        "sub_category": "Sports"
       }
     ]
   },
@@ -225,12 +255,14 @@
       {
         "description": "",
         "amount": 50.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Bills"
       },
       {
         "description": "",
         "amount": 58.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -241,12 +273,14 @@
       {
         "description": "",
         "amount": 46.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       },
       {
         "description": "",
         "amount": 58.0,
-        "category": "Essential"
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },

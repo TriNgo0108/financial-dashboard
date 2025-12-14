@@ -27,6 +27,7 @@ export interface Transaction {
     description: string;
     amount: number;
     category: string;
+    sub_category?: string;
 }
 
 export interface DailyData {
