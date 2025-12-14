@@ -38,7 +38,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                         </div>
                     </div>
                     <div className="text-xs text-gray-400 italic">
-                        Hover over a bar to view transactions
+                        Click a bar to view transactions
                     </div>
                 </div>
 
@@ -69,6 +69,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                             <Tooltip
                                 cursor={{ fill: '#fee2e2', opacity: 0.4 }}
                                 contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
+                                labelStyle={{ display: 'none' }}
                                 formatter={(value: number) => [new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value), 'Expense']}
                             />
                             <Bar
@@ -76,7 +77,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                                 radius={[4, 4, 0, 0]}
                                 maxBarSize={40}
                                 cursor="pointer"
-                                onMouseEnter={(data: any) => handleBarClick(data)}
+                                onClick={(data: any) => handleBarClick(data)}
                             >
                                 {data.map((entry, index) => (
                                     <Cell
@@ -115,7 +116,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
 
                         <div
                             key={selectedDay.day} // Trigger animation on day change
-                            className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                            className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-3 animate-slide-up-manual"
                         >
                             {selectedDay.transactions.length > 0 ? (
                                 selectedDay.transactions.map((tx, idx) => (

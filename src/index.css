@@ -3,3 +3,29 @@
 body {
   background-color: #f9fafb;
 }
+
+.recharts-wrapper *:focus {
+  outline: none;
+}
+
+@media (pointer: coarse) {
+  .recharts-tooltip-wrapper {
+    display: none !important;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-manual {
+  animation: slideUp 0.5s ease-out forwards;
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import CryptoJS from 'crypto-js';
 import type { KpiSummary, MonthlyData, DailyData } from '@types';
 
@@ -36,18 +37,17 @@ export const useFinancialData = (): UseFinancialDataReturn => {
         const loadData = async () => {
             try {
                 const [kpiRes, monthlyRes, dailyRes] = await Promise.all([
-                    fetch('./data/kpi_summary.json'),
-                    fetch('./data/monthly_summary.json'),
-                    fetch('./data/current_month_daily.json').catch(() => null)
+                    axios.get<any>('./data/kpi_summary.json'),
+                    axios.get<any>('./data/monthly_summary.json'),
+                    axios.get<any>('./data/current_month_daily.json').catch(() => null)
                 ]);
 
-                if (!kpiRes.ok || !monthlyRes.ok) {
-                    throw new Error('Failed to load data files');
-                }
+                // Axios throws on non-2xx responses by default, so we don't need to check .ok manually for the first two.
+                // If they fail, execution will jump to the catch block.
 
-                const kpiJson = await kpiRes.json();
-                const monthlyJson = await monthlyRes.json();
-                const dailyJson = dailyRes && dailyRes.ok ? await dailyRes.json() : { encrypted: false, data: [] };
+                const kpiJson = kpiRes.data;
+                const monthlyJson = monthlyRes.data;
+                const dailyJson = dailyRes ? dailyRes.data : { encrypted: false, data: [] };
 
                 if (kpiJson.encrypted) {
                     setIsEncrypted(true);

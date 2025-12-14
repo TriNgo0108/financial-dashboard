@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import {
     PieChart,
     Pie,
@@ -18,6 +18,21 @@ const COLORS = ['#F43F5E', '#8B5CF6', '#10B981', '#F59E0B', '#3B82F6', '#EC4899'
 
 export const MonthBreakdown = ({ data }: MonthBreakdownProps) => {
     const [activeIndex, setActiveIndex] = useState(-1);
+    const chartRef = useRef<HTMLDivElement>(null);
+
+    // Handle click outside to reset selection
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (chartRef.current && !chartRef.current.contains(event.target as Node)) {
+                setActiveIndex(-1);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     // 1. Calculate Total Month Expense
     const totalExpense = data.reduce((sum, day) => sum + day.amount, 0);
@@ -84,7 +99,7 @@ export const MonthBreakdown = ({ data }: MonthBreakdownProps) => {
     };
 
     return (
-        <div className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-white/20 flex flex-col items-center justify-center mt-8">
+        <div ref={chartRef} className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-sm border border-white/20 flex flex-col items-center justify-center mt-8">
             <div className="w-full flex justify-between items-center mb-4">
                 <div className="flex items-center gap-2">
                     <div className="p-2 bg-indigo-50 text-indigo-600 rounded-lg">
@@ -116,8 +131,8 @@ export const MonthBreakdown = ({ data }: MonthBreakdownProps) => {
                             outerRadius={140}
                             paddingAngle={3}
                             dataKey="value"
-                            onMouseEnter={onPieEnter}
-                            onMouseLeave={() => setActiveIndex(-1)}
+                            cursor="pointer"
+                            onClick={onPieEnter}
                         >
                             {breakdown.map((_, index) => (
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} strokeWidth={0} />
