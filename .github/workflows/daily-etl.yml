@@ -51,6 +51,8 @@ jobs:
       - name: Build React App
         run: |
           npm run build
+          # Explicitly copy data to dist to ensure it's included
+          mkdir -p dist/data
           cp -r public/data/* dist/data/
 
       - name: Deploy to GitHub Pages
