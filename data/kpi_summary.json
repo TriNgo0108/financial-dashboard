@@ -1,30 +1,30 @@
 {
   "total_income_current_month": 0.0,
-  "total_expense_current_month": 0.0,
+  "total_expense_current_month": 7909.0,
   "total_income_last_month": 0.0,
-  "total_expense_last_month": 0.0,
+  "total_expense_last_month": 8388.0,
   "highest_month": {
     "year": 2025,
     "month": 7,
     "income": 0.0,
-    "expense": 0.0,
-    "net": 0.0,
+    "expense": 4530.0,
+    "net": -4530.0,
     "is_highest_net": true,
-    "is_lowest_net": true
+    "is_lowest_net": false
   },
   "lowest_month": {
     "year": 2025,
-    "month": 7,
+    "month": 9,
     "income": 0.0,
-    "expense": 0.0,
-    "net": 0.0,
-    "is_highest_net": true,
+    "expense": 10621.0,
+    "net": -10621.0,
+    "is_highest_net": false,
     "is_lowest_net": true
   },
   "forecast_next_month_income": 0.0,
-  "forecast_next_month_expense": 0.0,
+  "forecast_next_month_expense": 7005.8,
   "total_income_current_year": 0.0,
-  "total_expense_current_year": 0.0,
+  "total_expense_current_year": 43849.840000000004,
   "total_income_last_year": 0.0,
   "total_expense_last_year": 0.0
 }
