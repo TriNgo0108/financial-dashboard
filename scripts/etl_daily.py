@@ -13,16 +13,18 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 load_dotenv()
 
+from sqlalchemy import create_engine
+
 # --- Configuration ---
 DATABASE_URL = os.getenv("DATABASE_URL")
 DASHBOARD_PASSWORD = os.getenv("DASHBOARD_PASSWORD")
 
 OUTPUT_DIR = Path("public/data")
 
-def get_db_connection():
+def get_db_engine():
     if not DATABASE_URL:
         raise ValueError("DATABASE_URL environment variable is not set")
-    return psycopg2.connect(DATABASE_URL)
+    return create_engine(DATABASE_URL)
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.primitives import padding
@@ -75,12 +77,10 @@ def fetch_data():
     FROM transaction_read_model
     ORDER BY date ASC;
     """
-    conn = get_db_connection()
-    try:
+    engine = get_db_engine()
+    with engine.connect() as conn:
         df = pd.read_sql(query, conn)
         return df
-    finally:
-        conn.close()
 
 def process_data(df):
     if df.empty:
@@ -92,6 +92,7 @@ def process_data(df):
     
     # Ensure amount is numeric
     df['amount'] = pd.to_numeric(df['amount'])
+    df['type'] = df['type'].str.lower()
 
     # Monthly Aggregation
     monthly_groups = df.groupby(['year', 'month'])
