@@ -19,9 +19,6 @@ interface DailyChartProps {
 export const DailyChart = ({ data }: DailyChartProps) => {
     const [selectedDay, setSelectedDay] = useState<DailyData | null>(null);
 
-    // Auto-select today or the last available day on load could be nice, 
-    // but let's start with null (showing "Select a day").
-
     const handleBarClick = (data: DailyData) => {
         setSelectedDay(data);
     };
@@ -41,7 +38,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                         </div>
                     </div>
                     <div className="text-xs text-gray-400 italic">
-                        Click a bar to view transactions
+                        Hover over a bar to view transactions
                     </div>
                 </div>
 
@@ -50,11 +47,6 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                         <BarChart
                             data={data}
                             margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
-                            onClick={(state: any) => {
-                                if (state && state.activePayload && state.activePayload.length) {
-                                    handleBarClick(state.activePayload[0].payload);
-                                }
-                            }}
                         >
                             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f3f4f6" />
                             <XAxis
@@ -79,12 +71,17 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                                 contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
                                 formatter={(value: number) => [new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value), 'Expense']}
                             />
-                            <Bar dataKey="amount" radius={[4, 4, 0, 0]} maxBarSize={40} cursor="pointer">
+                            <Bar
+                                dataKey="amount"
+                                radius={[4, 4, 0, 0]}
+                                maxBarSize={40}
+                                cursor="pointer"
+                                onMouseEnter={(data: any) => handleBarClick(data)}
+                            >
                                 {data.map((entry, index) => (
                                     <Cell
                                         key={`cell-${index}`}
                                         fill={selectedDay && selectedDay.day === entry.day ? '#E11D48' : '#F43F5E'}
-                                    // Darker rose if selected
                                     />
                                 ))}
                             </Bar>
@@ -102,7 +99,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                     <div>
                         <h3 className="text-gray-800 font-bold text-lg">Transaction Details</h3>
                         <p className="text-xs text-gray-500">
-                            {selectedDay ? `Day ${selectedDay.day}` : 'Select a day'}
+                            {selectedDay ? `Day ${selectedDay.day}` : 'Hover a day'}
                         </p>
                     </div>
                 </div>
@@ -116,7 +113,10 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                             <span className="text-sm text-gray-500 ml-2">Total</span>
                         </div>
 
-                        <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-3">
+                        <div
+                            key={selectedDay.day} // Trigger animation on day change
+                            className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-500"
+                        >
                             {selectedDay.transactions.length > 0 ? (
                                 selectedDay.transactions.map((tx, idx) => (
                                     <div key={idx} className="group p-3 hover:bg-gray-50 rounded-xl transition-colors border border-gray-100/50">
@@ -147,7 +147,7 @@ export const DailyChart = ({ data }: DailyChartProps) => {
                             <Calendar size={32} className="text-gray-300" />
                         </div>
                         <p className="font-medium text-gray-500">No Day Selected</p>
-                        <p className="text-sm mt-2">Click on any bar in the chart to view the detailed transactions for that day.</p>
+                        <p className="text-sm mt-2">Hover over charts to see the detailed transactions.</p>
                     </div>
                 )}
             </div>

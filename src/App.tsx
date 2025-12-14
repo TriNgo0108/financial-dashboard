@@ -1,6 +1,7 @@
 import { KpiCards } from '@components/KpiCards';
 import { MonthlyChart } from '@components/MonthlyChart';
 import { DailyChart } from '@components/DailyChart';
+import { MonthBreakdown } from '@components/MonthBreakdown';
 import { Login } from '@components/Login';
 import { useFinancialData } from '@hooks/useFinancialData';
 import { LayoutDashboard, LogOut } from 'lucide-react';
@@ -71,6 +72,10 @@ function App() {
 
         <section className="mt-8">
           <MonthlyChart data={monthlyData} />
+        </section>
+
+        <section className="mt-8">
+          <MonthBreakdown data={dailyData} />
         </section>
 
         <section className="mt-8">
