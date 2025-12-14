@@ -220,18 +220,25 @@ def main():
         # Encrypt logic here
         print("Encrypting and writing output files...")
         
-        encrypted_kpi = encrypt_data(kpi_summary, DASHBOARD_PASSWORD)
-        encrypted_monthly = encrypt_data(monthly_summary, DASHBOARD_PASSWORD)
-        encrypted_daily = encrypt_data(daily_summary, DASHBOARD_PASSWORD)
+        # encrypted_kpi = encrypt_data(kpi_summary, DASHBOARD_PASSWORD)
+        # encrypted_monthly = encrypt_data(monthly_summary, DASHBOARD_PASSWORD)
+        # encrypted_daily = encrypt_data(daily_summary, DASHBOARD_PASSWORD)
 
+        # For temporary disable encryption, we just wrap them in the structure expected by frontend if needed,
+        # OR we just save them as is and frontend handles it (frontend handles plain data if 'encrypted' key is missing or false)
+        
+        # Frontend logic: 
+        # if (kpiJson.encrypted) { ... } else { setKpiData(kpiJson); ... }
+        # So we can just dump the raw dictionaries.
+        
         with open(OUTPUT_DIR / "kpi_summary.json", "w") as f:
-            json.dump(encrypted_kpi, f, indent=2)
+            json.dump(kpi_summary, f, indent=2)
             
         with open(OUTPUT_DIR / "monthly_summary.json", "w") as f:
-            json.dump(encrypted_monthly, f, indent=2)
+            json.dump(monthly_summary, f, indent=2)
             
         with open(OUTPUT_DIR / "current_month_daily.json", "w") as f:
-            json.dump(encrypted_daily, f, indent=2)
+            json.dump(daily_summary, f, indent=2)
             
         print("ETL completed successfully.")
         
