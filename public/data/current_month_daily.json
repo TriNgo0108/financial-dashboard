@@ -10,9 +10,9 @@
     "transactions": [
       {
         "description": "",
-        "amount": 239.0,
+        "amount": 200.0,
         "category": "Essential",
-        "sub_category": "Food"
+        "sub_category": "Bills"
       },
       {
         "description": "",
@@ -34,9 +34,9 @@
       },
       {
         "description": "",
-        "amount": 200.0,
+        "amount": 239.0,
         "category": "Essential",
-        "sub_category": "Bills"
+        "sub_category": "Food"
       },
       {
         "description": "",
@@ -52,15 +52,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 439.0,
-        "category": "Shopping",
-        "sub_category": "Electronics"
-      },
-      {
-        "description": "",
         "amount": 52.0,
         "category": "Essential",
         "sub_category": "Food"
+      },
+      {
+        "description": "",
+        "amount": 439.0,
+        "category": "Shopping",
+        "sub_category": "Electronics"
       }
     ]
   },
@@ -70,13 +70,19 @@
     "transactions": [
       {
         "description": "",
+        "amount": 80.0,
+        "category": "Shopping",
+        "sub_category": "Beauty"
+      },
+      {
+        "description": "",
         "amount": 20.0,
         "category": "Essential",
         "sub_category": "Food"
       },
       {
         "description": "",
-        "amount": 29.0,
+        "amount": 35.0,
         "category": "Essential",
         "sub_category": "Food"
       },
@@ -88,15 +94,9 @@
       },
       {
         "description": "",
-        "amount": 35.0,
+        "amount": 29.0,
         "category": "Essential",
         "sub_category": "Food"
-      },
-      {
-        "description": "",
-        "amount": 80.0,
-        "category": "Shopping",
-        "sub_category": "Beauty"
       }
     ]
   },
@@ -111,15 +111,21 @@
     "transactions": [
       {
         "description": "",
-        "amount": 80.0,
-        "category": "Essential",
-        "sub_category": "Food"
+        "amount": 235.0,
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
         "amount": 129.0,
         "category": "Shopping",
         "sub_category": "General"
+      },
+      {
+        "description": "",
+        "amount": 35.0,
+        "category": "Entertainment",
+        "sub_category": "Movies"
       },
       {
         "description": "",
@@ -135,15 +141,9 @@
       },
       {
         "description": "",
-        "amount": 235.0,
-        "category": "Shopping",
-        "sub_category": "General"
-      },
-      {
-        "description": "",
-        "amount": 35.0,
-        "category": "Entertainment",
-        "sub_category": "Movies"
+        "amount": 80.0,
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -151,6 +151,12 @@
     "day": 7,
     "amount": 3568.0,
     "transactions": [
+      {
+        "description": "",
+        "amount": 68.0,
+        "category": "Essential",
+        "sub_category": "Food"
+      },
       {
         "description": "",
         "amount": 1900.0,
@@ -162,12 +168,6 @@
         "amount": 1600.0,
         "category": "Essential",
         "sub_category": "Bills"
-      },
-      {
-        "description": "",
-        "amount": 68.0,
-        "category": "Essential",
-        "sub_category": "Food"
       }
     ]
   },
@@ -177,13 +177,13 @@
     "transactions": [
       {
         "description": "",
-        "amount": 35.0,
+        "amount": 28.0,
         "category": "Essential",
         "sub_category": "Food"
       },
       {
         "description": "",
-        "amount": 28.0,
+        "amount": 35.0,
         "category": "Essential",
         "sub_category": "Food"
       }
@@ -213,15 +213,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 55.0,
-        "category": "Essential",
-        "sub_category": "Food"
-      },
-      {
-        "description": "",
         "amount": 20.0,
         "category": "Other",
         "sub_category": "Misc"
+      },
+      {
+        "description": "",
+        "amount": 55.0,
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -231,15 +231,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 36.0,
-        "category": "Essential",
-        "sub_category": "Food"
-      },
-      {
-        "description": "",
         "amount": 1200.0,
         "category": "Shopping",
         "sub_category": "Sports"
+      },
+      {
+        "description": "",
+        "amount": 36.0,
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -254,22 +254,28 @@
     "transactions": [
       {
         "description": "",
-        "amount": 50.0,
-        "category": "Essential",
-        "sub_category": "Bills"
-      },
-      {
-        "description": "",
         "amount": 58.0,
         "category": "Essential",
         "sub_category": "Food"
+      },
+      {
+        "description": "",
+        "amount": 50.0,
+        "category": "Essential",
+        "sub_category": "Bills"
       }
     ]
   },
   {
     "day": 14,
-    "amount": 104.0,
+    "amount": 160.0,
     "transactions": [
+      {
+        "description": "",
+        "amount": 56.0,
+        "category": "Essential",
+        "sub_category": "Food"
+      },
       {
         "description": "",
         "amount": 46.0,
