@@ -54,6 +54,7 @@ jobs:
           # Explicitly copy data to dist to ensure it's included
           mkdir -p dist/data
           cp -r public/data/* dist/data/
+          touch dist/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
