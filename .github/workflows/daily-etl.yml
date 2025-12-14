@@ -24,11 +24,7 @@ jobs:
 
       - name: Run ETL Script
         env:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_PORT: 5432
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
         run: |
           python scripts/etl_daily.py
