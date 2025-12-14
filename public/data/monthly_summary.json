@@ -1,5 +1,56 @@
-{
-  "encrypted": true,
-  "data": "7D9sXJuPxr4rpVNIgGyXZTY6VZC1NhAeVObRtfaz5tHR9C5JOd5mgiiulqsRHDsXLVzOdt3y0y9vZUfK4kqAeCO/A7zeNkoXRi7eb1HNimWfFLyN5qbhN2b/JF4/Q6I8C6Imte+FeCjsAgMQyIjm59CE4eqbh6LcVhV9DWlKjKOZEnLUlBwsuOUWvsvgsxhbncqV9e/Eai6VnvqjuPHXRItKEC1ZSIVqCYJFaZS6e4Sgu9FHapEbuIud8MHwo4gCwMSJd/oXWHkLdiPY9rtiQbZFFiI0NelcSUYg+9r8Gbc49YU4nnmw/JnkMeeoQvd4NbUYcHBzJV3mozdfnV12yaeWBCVHK8lHumbDsx8llaVxsQ1JigdI9S+TLq0kaVDfBCMiUcUP7oX2RsN642Ux4cW9/ZL7mNhw86FuMWCrcMYqd0f+6M4oZ/npb8x6NpQLzrkyO/BofcSpOObDyO/8Nrngr3Xk84S6KYI972pbyHuxJunZsJTI3ZHlowtgmk/AOf7O488u3aFkHo7boM/g7jWndn1XAa0hvJxH36vXxpkV3m94Cjf/TiNfTjVtGIF1wBc9vmvLda5R82eFtF0sKd961QJ+Nc3p4T+wGUn+DDmh3eB5xtX2Skrsyk/Z+ZKZfZ5oZZyFnrVSK9WT7SmLjXM63uUgRAW+uB4cNoCQCV35qUftrqAzuxjXmAuE1N+Kb2Hqn8j8eL07p+2E679IOfn+bI9GMQ69nhjnc94kt5hKmQI8gLSPKX8wKYHenTdt6b3gOUVx6CJ6NG2XVJIQRL47HthnXSioRtootg/pVVSm8Hpx5xyDDjrck43fEoweL/NGxZq/TBEVEo9nCUWVVIDMWVS2xRSyYKqPCSSjpqQMBfTcVHM2ZiTjOXtL5S9kpyzkhy+zDdb1TDkxayAXqUyBEBFrjIQq1dvLPaHBZCp29O21QFvxU47L1J081KuAGCLGI4vAJK8cU5q/T5zWK3bWZ25RTlVxskHMFCu5Rhg=",
-  "salt": "1WxDBTWnXBtmaN/addGQbA=="
-}
+[
+  {
+    "year": 2025,
+    "month": 7,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": true,
+    "is_lowest_net": true
+  },
+  {
+    "year": 2025,
+    "month": 8,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 9,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 10,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 11,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 12,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  }
+]
