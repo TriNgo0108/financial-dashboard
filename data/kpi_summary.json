@@ -1,5 +1,30 @@
 {
-  "encrypted": true,
-  "data": "d3HchxZqUbM3bxb0jhiqM6Z0KFRA2cvdPlwkrVWE4b429MeVa4QhmdliMXfa+mSGGRyY+9NjkswwMF9QyKtlxOUzYS1tNUTttQiFYF34rFb7h8SHIIvPMIVDuMAj8QlPchKvU7YvcFSH+3zV4b0v5VqfHHvfo8mb3xdqp7se5NaBf2Y3hg4UzZExmb+oWxB9FpaI1sqy2bec46DVnJbl6kfm/gZ7hbHrqB2tIrO1NnzCuKASdV39CqyTZNvQrdgVReJ30JFZqUioLqhyBjh+AK3hKYa3bDGWW54WHO9E6fFkAvjC6Cy3h3hy8M79WxT2uoNI50THEpgxVA48tUOkQSHDdIE6mi19O3WoWCZ6k3Lx6xPsH/YyoE5g1FmNB1NmSAFsBC62MwxMlSL3dRahLGczMtQ/EDNM/TDjuaNudycUKgq4J+DiIpMvne6ISWzTHYbB7oxvpRG2J2VXcL7vdYkf9d69SzWO5rr5rMZdRJtcT9jhXCWcQuTE6TLHn31C49B59DPXhKqtRm9gpioPUkaLXmI9Rk/X6IM7MDMtnfneXm0MQQ8PKC/rZJ3bWo6RZM/B9rzUIkWNvSn8tKrQQ11Su9ibvgoKQV1LleDPVlAvjC7RqScmmwifkvuKiJG2rwEUYnCNUb4dYkNwusTzZBJVWdsrfrD/EX4XBx8RKDr5Ss6nUVC+eN6qEVkJymoZDnlFrwS23c77+YME0Ff8JqneQrEgHDs+tghvOX+RSkQ/8ffX8ltvH/mFj2xCVBSKA69b4jT4vb/UHVeFvCKCV/YhpK2K13yJGEjCVqgIVOHd0tBhlerjueFzUkxk4sMLT56BPe74N/+iak9NqWi3bA==",
-  "salt": "r83+C1N1Ztayzo+VOM/XbA=="
+  "total_income_current_month": 0.0,
+  "total_expense_current_month": 0.0,
+  "total_income_last_month": 0.0,
+  "total_expense_last_month": 0.0,
+  "highest_month": {
+    "year": 2025,
+    "month": 7,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": true,
+    "is_lowest_net": true
+  },
+  "lowest_month": {
+    "year": 2025,
+    "month": 7,
+    "income": 0.0,
+    "expense": 0.0,
+    "net": 0.0,
+    "is_highest_net": true,
+    "is_lowest_net": true
+  },
+  "forecast_next_month_income": 0.0,
+  "forecast_next_month_expense": 0.0,
+  "total_income_current_year": 0.0,
+  "total_expense_current_year": 0.0,
+  "total_income_last_year": 0.0,
+  "total_expense_last_year": 0.0
 }
