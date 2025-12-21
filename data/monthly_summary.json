@@ -24,7 +24,7 @@
     "expense": 10621.0,
     "net": -10621.0,
     "is_highest_net": false,
-    "is_lowest_net": true
+    "is_lowest_net": false
   },
   {
     "year": 2025,
@@ -48,9 +48,9 @@
     "year": 2025,
     "month": 12,
     "income": 0.0,
-    "expense": 10363.0,
-    "net": -10363.0,
+    "expense": 10803.0,
+    "net": -10803.0,
     "is_highest_net": false,
-    "is_lowest_net": false
+    "is_lowest_net": true
   }
 ]
