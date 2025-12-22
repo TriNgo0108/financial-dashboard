@@ -48,8 +48,8 @@
     "year": 2025,
     "month": 12,
     "income": 0.0,
-    "expense": 10803.0,
-    "net": -10803.0,
+    "expense": 10980.0,
+    "net": -10980.0,
     "is_highest_net": false,
     "is_lowest_net": true
   }
