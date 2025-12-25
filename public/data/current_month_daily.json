@@ -111,9 +111,9 @@
     "transactions": [
       {
         "description": "",
-        "amount": 35.0,
-        "category": "Entertainment",
-        "sub_category": "Movies"
+        "amount": 129.0,
+        "category": "Shopping",
+        "sub_category": "General"
       },
       {
         "description": "",
@@ -141,9 +141,9 @@
       },
       {
         "description": "",
-        "amount": 129.0,
-        "category": "Shopping",
-        "sub_category": "General"
+        "amount": 35.0,
+        "category": "Entertainment",
+        "sub_category": "Movies"
       }
     ]
   },
@@ -177,13 +177,13 @@
     "transactions": [
       {
         "description": "",
-        "amount": 28.0,
+        "amount": 35.0,
         "category": "Essential",
         "sub_category": "Food"
       },
       {
         "description": "",
-        "amount": 35.0,
+        "amount": 28.0,
         "category": "Essential",
         "sub_category": "Food"
       }
@@ -254,15 +254,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 58.0,
-        "category": "Essential",
-        "sub_category": "Food"
-      },
-      {
-        "description": "",
         "amount": 50.0,
         "category": "Essential",
         "sub_category": "Bills"
+      },
+      {
+        "description": "",
+        "amount": 58.0,
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -314,15 +314,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 2000.0,
-        "category": "Other",
-        "sub_category": "Investment"
-      },
-      {
-        "description": "",
         "amount": 48.0,
         "category": "Essential",
         "sub_category": "Food"
+      },
+      {
+        "description": "",
+        "amount": 2000.0,
+        "category": "Other",
+        "sub_category": "Investment"
       }
     ]
   },
@@ -332,13 +332,13 @@
     "transactions": [
       {
         "description": "",
-        "amount": 138.0,
+        "amount": 28.0,
         "category": "Essential",
         "sub_category": "Food"
       },
       {
         "description": "",
-        "amount": 28.0,
+        "amount": 138.0,
         "category": "Essential",
         "sub_category": "Food"
       }
@@ -350,7 +350,7 @@
     "transactions": [
       {
         "description": "",
-        "amount": 26.0,
+        "amount": 20.0,
         "category": "Essential",
         "sub_category": "Food"
       },
@@ -368,7 +368,7 @@
       },
       {
         "description": "",
-        "amount": 20.0,
+        "amount": 26.0,
         "category": "Essential",
         "sub_category": "Food"
       }
@@ -392,15 +392,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 58.0,
-        "category": "Essential",
-        "sub_category": "Food"
-      },
-      {
-        "description": "",
         "amount": 382.0,
         "category": "Shopping",
         "sub_category": "Electronics"
+      },
+      {
+        "description": "",
+        "amount": 58.0,
+        "category": "Essential",
+        "sub_category": "Food"
       }
     ]
   },
@@ -410,15 +410,15 @@
     "transactions": [
       {
         "description": "",
-        "amount": 119.0,
-        "category": "Essential",
-        "sub_category": "Transport"
-      },
-      {
-        "description": "",
         "amount": 58.0,
         "category": "Essential",
         "sub_category": "Food"
+      },
+      {
+        "description": "",
+        "amount": 119.0,
+        "category": "Essential",
+        "sub_category": "Transport"
       }
     ]
   },
@@ -440,13 +440,13 @@
     "transactions": [
       {
         "description": "",
-        "amount": 50.0,
+        "amount": 35.0,
         "category": "Essential",
         "sub_category": "Food"
       },
       {
         "description": "",
-        "amount": 35.0,
+        "amount": 50.0,
         "category": "Essential",
         "sub_category": "Food"
       }
@@ -454,8 +454,15 @@
   },
   {
     "day": 24,
-    "amount": 0.0,
-    "transactions": []
+    "amount": 41.0,
+    "transactions": [
+      {
+        "description": "",
+        "amount": 41.0,
+        "category": "Essential",
+        "sub_category": "Food"
+      }
+    ]
   },
   {
     "day": 25,
