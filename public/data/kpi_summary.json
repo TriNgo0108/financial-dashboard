@@ -1,6 +1,6 @@
 {
   "total_income_current_month": 0.0,
-  "total_expense_current_month": 11338.0,
+  "total_expense_current_month": 11380.0,
   "total_income_last_month": 0.0,
   "total_expense_last_month": 8388.0,
   "highest_month": {
@@ -16,15 +16,15 @@
     "year": 2025,
     "month": 12,
     "income": 0.0,
-    "expense": 11338.0,
-    "net": -11338.0,
+    "expense": 11380.0,
+    "net": -11380.0,
     "is_highest_net": false,
     "is_lowest_net": true
   },
   "forecast_next_month_income": 0.0,
-  "forecast_next_month_expense": 8148.8,
+  "forecast_next_month_expense": 8162.8,
   "total_income_current_year": 0.0,
-  "total_expense_current_year": 47278.840000000004,
+  "total_expense_current_year": 47320.840000000004,
   "total_income_last_year": 0.0,
   "total_expense_last_year": 0.0
 }
