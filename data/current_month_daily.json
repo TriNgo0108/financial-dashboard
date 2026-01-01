@@ -1,8 +1,21 @@
 [
   {
     "day": 1,
-    "amount": 0.0,
-    "transactions": []
+    "amount": 337.0,
+    "transactions": [
+      {
+        "description": "",
+        "amount": 280.0,
+        "category": "Essential",
+        "sub_category": "Bills"
+      },
+      {
+        "description": "",
+        "amount": 57.0,
+        "category": "Essential",
+        "sub_category": "Food"
+      }
+    ]
   },
   {
     "day": 2,

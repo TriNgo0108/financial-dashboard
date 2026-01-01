@@ -5,7 +5,7 @@
     "income": 0.0,
     "expense": 4530.0,
     "net": -4530.0,
-    "is_highest_net": true,
+    "is_highest_net": false,
     "is_lowest_net": false
   },
   {
@@ -52,5 +52,14 @@
     "net": -11550.0,
     "is_highest_net": false,
     "is_lowest_net": true
+  },
+  {
+    "year": 2026,
+    "month": 1,
+    "income": 15587.0,
+    "expense": 337.0,
+    "net": 15250.0,
+    "is_highest_net": true,
+    "is_lowest_net": false
   }
 ]
