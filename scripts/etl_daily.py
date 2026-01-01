@@ -229,13 +229,13 @@ def main():
 
         
         with open(OUTPUT_DIR / "kpi_summary.json", "w") as f:
-            json.dump(kpi_summary, f, indent=2)
+            json.dump(encrypted_kpi, f, indent=2)
             
         with open(OUTPUT_DIR / "monthly_summary.json", "w") as f:
-            json.dump(monthly_summary, f, indent=2)
+            json.dump(encrypted_monthly, f, indent=2)
             
         with open(OUTPUT_DIR / "current_month_daily.json", "w") as f:
-            json.dump(daily_summary, f, indent=2)
+            json.dump(encrypted_daily, f, indent=2)
             
         print("ETL completed successfully.")
         
