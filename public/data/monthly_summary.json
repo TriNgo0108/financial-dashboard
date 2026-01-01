@@ -1,0 +1,65 @@
+[
+  {
+    "year": 2025,
+    "month": 7,
+    "income": 0.0,
+    "expense": 4530.0,
+    "net": -4530.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 8,
+    "income": 0.0,
+    "expense": 7681.4400000000005,
+    "net": -7681.4400000000005,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 9,
+    "income": 0.0,
+    "expense": 10621.0,
+    "net": -10621.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 10,
+    "income": 0.0,
+    "expense": 4720.4,
+    "net": -4720.4,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 11,
+    "income": 0.0,
+    "expense": 8388.0,
+    "net": -8388.0,
+    "is_highest_net": false,
+    "is_lowest_net": false
+  },
+  {
+    "year": 2025,
+    "month": 12,
+    "income": 0.0,
+    "expense": 11550.0,
+    "net": -11550.0,
+    "is_highest_net": false,
+    "is_lowest_net": true
+  },
+  {
+    "year": 2026,
+    "month": 1,
+    "income": 15587.0,
+    "expense": 337.0,
+    "net": 15250.0,
+    "is_highest_net": true,
+    "is_lowest_net": false
+  }
+]
